@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="questionType">
+  <ClassDiagramComponents>
+    <Class name="qChoice" package="questionType" visibility="public" xPosition="92.0" yPosition="349.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="qEnum" package="questionType" visibility="public" xPosition="105.0" yPosition="132.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="qFill" package="questionType" visibility="public" xPosition="498.0" yPosition="234.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="qType" package="questionType" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="questionType.qChoice" target="questionType.qType"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="questionType.qFill" target="questionType.qType"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="questionType.qEnum" target="questionType.qType"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MindFact">
+  <ClassDiagramComponents>
+    <Class name="choiceQuestion" package="mindfact" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="package"/>
+        <Field name="cont" type="Controller" visibility="package"/>
+        <Field name="diff3" type="String" visibility="public" isStatic="true"/>
+        <Field name="differ3" type="String" visibility="public" isStatic="true"/>
+        <Field name="choiceA" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="choiceAA" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceB" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="choiceBB" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceC" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="choiceCC" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceD" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="choiceDD" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="questionField" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="para"/>
+          <Argument type="int" name="choi"/>
+          <Argument type="String" name="differ"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="formFocusGained" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="formWindowActivated" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="choiceBBActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceAMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="choiceAAActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceCCActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceDDActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ComboBox" package="mindfact" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jComboBox1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="show_combobox_selected" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initializer" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="show_combobox_selectedActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jComboBox1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Controller" package="mindfact" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="score" type="int" visibility="package"/>
+        <Field name="correct" type="int" visibility="package"/>
+        <Field name="diff" type="String" visibility="public" isStatic="true"/>
+        <Field name="differ" type="String" visibility="public" isStatic="true"/>
+        <Field name="rand" type="Randomizer" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getQuestions" returnType="void" visibility="public"/>
+        <Method name="OptionPane1" returnType="void" visibility="public"/>
+        <Method name="OptionPane0" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Database" package="mindfact" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="public" isStatic="true"/>
+        <Field name="st" type="Statement" visibility="public" isStatic="true"/>
+        <Field name="rs" type="ResultSet" visibility="public" isStatic="true"/>
+        <Field name="dbc" type="Database" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDatabase" returnType="Database" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="difficulty" package="mindfact" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="easyButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="hardButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="mediumButton" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="package">
+          <Argument type="String" name="para"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="easyButtonMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="mediumButtonMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="hardButtonMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="easyButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="enumerationQuestion" package="mindfact" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="answerField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="questionField" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="scoreBoard" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="questionQ"/>
+          <Argument type="int" name="secS"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="answerFieldActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="formWindowActivated" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="answerFieldMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="fillQuestion" package="mindfact" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="answerField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="questionField" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="scoreBoard" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="questionQ"/>
+          <Argument type="int" name="secS"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="answerFieldActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="formWindowActivated" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="answerFieldMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="leaderBoards" package="mindfact" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="name1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="score9" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="questionQ"/>
+          <Argument type="int" name="secS"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="formWindowGainedFocus" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MindFact" package="mindfact" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Randomizer" package="mindfact" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="rand" type="Random" visibility="package"/>
+        <Field name="sec" type="int" visibility="package"/>
+        <Field name="n" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="scoreTracker" package="mindfact" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="score" type="int" visibility="private" isStatic="true"/>
+        <Field name="stop" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getScore" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="score" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="getStopper" returnType="int" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="stopper" package="mindfact" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="stop" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getStopper" returnType="int" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="submitChoice" package="mindfact" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="package"/>
+        <Field name="cont" type="Controller" visibility="package"/>
+        <Field name="button1" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="button2" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="button3" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="button4" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="choiceA" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="choiceAA" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceAA1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceAA2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceAA3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="choiceB" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="choiceC" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="choiceD" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="correctAns" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jComboBox1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox2" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="questionField" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="choiceBox" returnType="void" visibility="public"/>
+        <Method name="initializer" returnType="void" visibility="public"/>
+        <Method name="groupButton" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="choiceAAActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceAA1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceAA2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceAA3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceDActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jComboBox1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jComboBox2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="choiceAActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="correctAnsActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="correctAnsMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="questionFieldMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="submitEnum" package="mindfact" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="jComboBox3" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nextButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="question" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initializer" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jTextField1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="nextButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="questionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jComboBox3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="submitFill" package="mindfact" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="jComboBox4" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nextButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="nextButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="question" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initializer" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jTextField1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="nextButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="nextButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jComboBox4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="title" package="mindfact" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="usernameField" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="usernameFieldMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="usernameFieldActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="trueOrFalseQuestion" package="mindfact" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="qChoice" package="questionType" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="qEnum" package="questionType" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="qFill" package="questionType" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="qType" package="questionType" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Methods>
+        <Method name="Type" returnType="void" visibility="public">
+          <Argument type="String" name="question"/>
+          <Argument type="int" name="sec"/>
+          <Argument type="String" name="diff"/>
+          <Argument type="String" name="differ"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cont" source="mindfact.choiceQuestion" target="mindfact.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cont" source="mindfact.submitChoice" target="mindfact.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="rand" source="mindfact.Controller" target="mindfact.Randomizer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="questionType.qEnum" target="questionType.qType"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="questionType.qChoice" target="questionType.qType"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="questionType.qFill" target="questionType.qType"/>
+    <HasRelation name="dbc" source="mindfact.Database" target="mindfact.Database" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="mindfact.Database" target="mindfact.Database" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

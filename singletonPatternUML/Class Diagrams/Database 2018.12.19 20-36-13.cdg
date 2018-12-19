@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Database">
+  <ClassDiagramComponents>
+    <Class name="Database" package="mindfact" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="public" isStatic="true"/>
+        <Field name="st" type="Statement" visibility="public" isStatic="true"/>
+        <Field name="rs" type="ResultSet" visibility="public" isStatic="true"/>
+        <Field name="dbc" type="Database" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDatabase" returnType="Database" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="mindfact.Database" target="mindfact.Database" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="dbc" source="mindfact.Database" target="mindfact.Database" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
